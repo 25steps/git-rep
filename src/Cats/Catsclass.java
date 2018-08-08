@@ -11,4 +11,15 @@ public class Catsclass {
         this.colour = colour;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getColour() {
+        return colour;
+    }
 }
