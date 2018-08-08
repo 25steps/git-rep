@@ -21,5 +21,13 @@ public class Catsclass {
 
     public String getColour() {
         return colour;
+
+    public void infoCat(){
+        if (age < 5) {
+            System.out.println("It's young cat.");
+        } else {
+            System.out.println("It's old cat.");
+        }
+
     }
 }
