@@ -13,6 +13,7 @@ public class Catsmain {
             System.out.println("Name: "+cats[i].getName());
             System.out.println("Age: "+cats[i].getAge());
             System.out.println("Colour: "+cats[i].getColour());
+            cats[i].infoCat();
             System.out.println();
             }
     }
