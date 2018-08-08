@@ -8,5 +8,7 @@ public class Catsmain {
         cats[2] = new Catsclass("Tolstya", 10, "Red");
         cats[3] = new Catsclass("Redsy", 2, "Black and White");
         cats[4] = new Catsclass("Stormy", 3, "Grey");
+
+        System.out.println("какой-то код");
     }
 }
