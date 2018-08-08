@@ -11,8 +11,20 @@ public class Catsclass {
         this.colour = colour;
     }
 
-    public void infoCat(){
-        if (age < 5) {
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void infoCat() {
+        if (getAge() < 5) {
             System.out.println("It's young cat.");
         } else {
             System.out.println("It's old cat.");
