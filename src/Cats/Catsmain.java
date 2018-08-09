@@ -11,9 +11,9 @@ public class Catsmain {
 
         for (int i = 0; i < cats.length; i++) {
             System.out.println("Name: "+cats[i].getName());
-            System.out.println("Age: "+cats[i].getAge());
-            System.out.println("Colour: "+cats[i].getColour());
+            System.out.print("Age: "+cats[i].getAge()+". ");
             cats[i].infoCat();
+            System.out.println("Colour: "+cats[i].getColour());
             System.out.println();
             }
     }
