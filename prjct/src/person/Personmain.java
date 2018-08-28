@@ -21,5 +21,7 @@ public class Personmain {
         System.out.println("Средний возраст отряда: " + avg);
         System.out.println("Сумма возрастов участников: " + sum);
 
+        System.out.println("Какой-то код");
+
     }
 }
