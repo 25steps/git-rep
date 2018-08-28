@@ -14,11 +14,12 @@ public class Personmain {
 
         System.out.println("Участники отряда Драккарня");
         for (int i = 0; i < persons.length; i++) {
-            System.out.println(i+1 +": " + persons[i].getName());
+            System.out.println(i+1 +": " + persons[i].getName() + ", age: " + persons[i].getAge());
             sum += persons[i].getAge();
         }
         avg = sum/persons.length;
-        System.out.println("Средний возраст отряда: "+ avg);
+        System.out.println("Средний возраст отряда: " + avg);
+        System.out.println("Сумма возрастов участников: " + sum);
 
     }
 }
