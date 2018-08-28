@@ -1,2 +1,0 @@
-print("bye");
-print(":3")
