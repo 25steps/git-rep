@@ -6,16 +6,6 @@ public class ArrMain {
         MyArr arr = new MyArr(size);
         for(int i = 0; i < size; i++)
             arr.insert((int)(Math.random()*size));
-//        arr.insert(5);
-//        arr.insert(1);
-//        arr.insert(3);
-//        arr.insert(2);
-//        arr.insert(5);
-//        arr.insert(3);
-//        arr.insert(6);
-//        arr.insert(8);
-//        arr.insert(9);
-//        arr.insert(0);
         int search;
         System.out.println("Выводим массив");
         arr.display();
@@ -31,9 +21,23 @@ public class ArrMain {
 
         System.out.println("Выводим массив");
         arr.display();
-        System.out.println("Выводим отсортированный массив");
-        arr.sortInsert();
-        arr.display();
+        System.out.println("Проверка сортировок");
+        size = 1000000;
+        MyArr arrSI = new MyArr(size);
+        MyArr arrSS = new MyArr(size);
+        MyArr arrSB = new MyArr(size);
+        for(int i = 0; i < size; i++)
+            arrSI.insert((int)(Math.random()*size));
+        arrSI.sortInsert();
+        arrSI.displayCountStep();
+        for(int i = 0; i < size; i++)
+            arrSB.insert((int)(Math.random()*size));
+        arrSB.sortBubble();
+        arrSB.displayCountStep();
+        for(int i = 0; i < size; i++)
+            arrSS.insert((int)(Math.random()*size));
+        arrSS.sortSelect();
+        arrSS.displayCountStep();
 
-    }
+        }
 }
